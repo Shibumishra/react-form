@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'antd/dist/antd.css';
 import Navbar from './components/Nabbar';

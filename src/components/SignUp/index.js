@@ -1,4 +1,6 @@
 import { Form, Input, InputNumber, Button } from 'antd';
+
+
 const layout = {
   labelCol: {
     span: 8,
@@ -22,8 +24,12 @@ const validateMessages = {
 /* eslint-enable no-template-curly-in-string */
 
 const SignUp = () => {
+
   const onFinish = (values) => {
+    const item = []
     console.log(values);
+    const data = window.localStorage.setItem("Info-Data", JSON.stringify(values));
+    item.push(data)
   };
 
   return (
@@ -77,5 +83,4 @@ const SignUp = () => {
     </Form>
   );
 };
-
-export default SignUp;
+export default SignUp ;
